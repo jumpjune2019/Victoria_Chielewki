@@ -1,0 +1,45 @@
+import java.util.Scanner; // import the Scanner
+public class Assignment04_PairOfDice {
+
+		public static void main(String[] args) {
+		
+			short menu = 0;
+			
+		
+			System.out.println("Would you like to roll the dice?");
+			 Scanner myObj = new Scanner(System.in);
+			  menu = myObj.nextShort(); 
+			System.out.println("Please Type Y or N: " + menu);
+			
+		
+	        switch (menu) {
+	        case 1:
+	        	
+	        //will roll numbers between 1 and 6
+	        	int roll1 = (int)(Math.random() * 6)+1;
+	        	int roll2 = (int)(Math.random() * 6)+1;
+	        	int total= roll1+roll2;
+	        	System.out.println( "You rolled a " + roll1 );
+	        	System.out.println( "You rolled a " + roll2);
+	        	
+	        	System.out.println ("total: " + total);
+	        	System.out.println("\n");
+	        	
+	        	
+	        	System.out.println("Would you like to play again?");
+	        	
+	        	System.out.println("Please type Y or N: " + menu);
+	      
+	        	
+	        	break;
+	        // does not want to roll a dice
+	        case 2:
+	        	System.out.println("Thanks for playing!");
+	        	
+	        	break;
+	       
+	        }
+			} 
+		
+		}
+
