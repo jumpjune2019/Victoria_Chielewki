@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+		<title>Example of Arrow Operator</title>
+		<script src="scripts/goOutside.js"></script>
+    </head>
+    <body>
+		<h1>Example of Arrow Operator</h1>
+		<p>Use the brower"s debugger to view the js executing</p>
+    </body>	
+	<p id="demo"></p>
+	<script>
+	// Create objects:
+	var isHot = (item) => "Bring a " + item;
+	//var isCold = (item) => "Bring a " + item;
+	//var isWet = (item) => "Bring a " + item;
+
+	// Display some data from the object:
+	document.getElementById("demo").innerHTML = isHot("fan");
+	//document.getElementById("demo").innerHTML = isCold("coat");
+	//document.getElementById("demo").innerHTML = isWet("rain jacket");
+
+	debugger;
+
+</script>
+</html>
